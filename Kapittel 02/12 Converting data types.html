@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $nr1 = 2;
+        let $nr2 = "2";
+        console.log($nr1 * $nr2); // Går fint 
+        console.log($nr1 + $nr2); //Går IKKJE fint!
+
+        let $nrToStr = 6;
+        $nrToStr = String($nrToStr);
+        console.log($nrToStr);
+
+        console.log ("\n");
+
+        let $strToNr = "12";
+        $strToNr = Number($strToNr);
+        console.log($strToNr);
+
+        let $strToBool = "Any string will return true";
+        $strToBool = Boolean($strToBool);
+        console.log($strToBool);
+
+        console.log ("\n");
+
+        let $nullToNr = null;
+        $nullToNr = Number($nullToNr);
+        console.log("null", $nullToNr, typeof($nullToNr));
+
+        $strToNr = "";
+        $strToNr = Number($strToNr);
+        console.log("Empty string", $strToNr, typeof($strToNr));
+    </script>
+</body>
+</html>
