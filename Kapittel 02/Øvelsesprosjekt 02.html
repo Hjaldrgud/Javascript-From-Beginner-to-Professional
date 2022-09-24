@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const TOMTILCM = 2.54;
+        const PUNTILKG = 2.2046;
+        let $feet = 6; //prompt("Skriv in antall fot lengde");
+        let $inches = 2.3; //prompt("Skriv inn antall tommer lengde");
+        let $vektP = 191.802; //prompt("Skriv inn vekt i pund");
+
+        let $cm = Math.round(($feet * 12 + $inches) * TOMTILCM);
+        let $kg = Math.round($vektP / PUNTILKG);
+        let $BMI = Math.round($kg / ($cm/100)**2 * 100) / 100;
+        console.log(`Med høgda di ${$cm} cm og vekta di ${$kg}, så blir BMI'en din ${$BMI}.`);
+    </script>
+</body>
+</html>
