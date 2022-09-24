@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $mat1 = [1,2,3];
+        let $mat2 = [4,5,6];
+        let $mat3 = [7,8,9];
+        let $megamat = [$mat1, $mat2, $mat3];
+        console.log($megamat);
+
+        $megamat2 = [[1,2,3], [4,5,6], [7,8,9]]; //Alternativ
+        console.log($megamat2);
+
+        let $verdiInnerst = $megamat[1][2];
+        console.log($verdiInnerst);
+
+        //Array av en array av en array
+        $gigaarray = [$megamat, $megamat, $megamat];
+        console.log($gigaarray);
+        console.log($gigaarray[1][1][1]);
+    </script>
+</body>
+</html>

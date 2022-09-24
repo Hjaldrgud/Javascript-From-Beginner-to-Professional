@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $arr = [2,6,7,8];
+
+        //find (wut?) Den må ta en funksjon. Altså. HVA? Anti-menneskelig kode
+        let $finnVerdi1 = $arr.find(function(element) { return element === 6});
+        let $finnVerdi2 = $arr.find(element => element === 10);
+        console.log($finnVerdi1, $finnVerdi2);
+
+        //indexof
+        let $finnindeks1 = $arr.indexOf(6);
+        let $finnindeks2 = $arr.indexOf(10);
+        console.log($finnindeks1, $finnindeks2);
+
+        //indexof med andreargument for å spesifisere hvilken posisjon den skal starte å leite i.
+        let $finnindeks3 = $arr.indexOf(6, 2); //indeks 2 er etter 6 er inni, derfor gir den -1 aka finner ikke.
+        console.log($finnindeks3);
+
+        //LastindexOf()
+        let $animals = ["bikkje", "hest", "katt", "gris", "bikkje"];
+        let $sisteBikkje = $animals.lastIndexOf("bikkje"); //blir indeksnummer 4.
+        console.log($sisteBikkje);
+    </script>
+</body>
+</html>

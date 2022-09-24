@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $handleliste = [];
+        $handleliste.push("melk"); //enkel
+        $handleliste.push("brød", "epler"); //fleier på ein gang
+        console.log("Original: ", $handleliste);
+        
+        let $brødNøkkel = $handleliste.indexOf("brød");
+        $handleliste.splice($brødNøkkel, 1, "bananer", "egg");
+        console.log("Fjerna brød, lagt til bananer og egg: ", $handleliste);
+        console.log("Popper siste element og returnerer i logg: ", $handleliste.pop());
+        
+        $handleliste.sort()
+        console.log("Sortert: ", $handleliste);
+        console.log("Indeks til melk: ", $handleliste.indexOf("melk"));
+
+        let $gulrotindeks = $handleliste.indexOf("bananer")+1;
+        $handleliste.splice($gulrotindeks, 0, "gulrot", "salat");
+        console.log("Lagt til gulrot og salat etter bananer: ", $handleliste);
+
+        let $handleliste2 = ["jus", "brus"];
+        $megalista = $handleliste.concat($handleliste2, $handleliste2);
+        console.log("Siste indeks til 'brus': ", $megalista.lastIndexOf("brus"));
+
+        console.log($megalista);
+    </script>
+</body>
+</html>
