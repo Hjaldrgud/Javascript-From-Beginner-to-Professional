@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $favorittfrukt = ["grapefrukt", "appelsin", "sitron"];
+        $favorittfrukt.push("eple");
+        console.log($favorittfrukt);
+        let $antallFavorittFrukter = $favorittfrukt.push("kiwi");
+        console.log($favorittfrukt);
+        console.log($antallFavorittFrukter);
+
+        let $matrisemedfigurer = ["sirkel", "triangel", "rektangel", "femkant"];
+        console.log($matrisemedfigurer);
+        $matrisemedfigurer.splice(1, 0, "parallellogram", "trapes"); //plass, om man skal slette, nye elementer
+        console.log($matrisemedfigurer);
+
+        $matrisemedfigurer.splice(2, 12, "åttekant"); //javascript sletter til den ikke finner fleire.
+        console.log($matrisemedfigurer);
+
+        //konkatinering
+        let $arr1 = [1,2,3];
+        let $arr2 = [4,5,6];
+        let $arr3 = $arr1.concat($arr2); //legg merke til ny variabel deklarering for at det skal fungere
+        console.log($arr3);
+
+        let $arr4 = $arr3.concat(7,8,9);
+        console.log($arr4);
+
+        //slette siste med array.pop()
+        $arr4.pop();
+        console.log("Etter pop: ", $arr4);
+
+        //Slette første med array.shift()
+        $arr4.shift()
+        console.log("Etter shift: ", $arr4);
+
+        //Slette med array.splice()
+        $arr4.splice(1,3);
+        console.log("Etter splice: ", $arr4);
+
+        //Slette med delete
+        delete $arr4[0];
+        console.log("Etter delete: ", $arr4);
+    </script>
+</body>
+</html>
