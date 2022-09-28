@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let $company = {
+            companyName: "Healthy Candy",
+            activities: ["food manufacturing", "improving kids' health", "manufacturing toys"],
+            addresses: [{
+                street: "2nd Street",
+                number: 123,
+                zip: 33116,
+                city: "Miami",
+                state: "Florida"
+            },
+            {
+                street: "Avenue X at Cicero",
+                number: 5,
+                zip: 75001,
+                city: "Gotham",
+                state: "Illinois"
+            }
+        ],
+            yearOfEstablishment: 2021
+        }
+
+        //Hente ut. veldig likt.
+        let $streetname = $company.addresses[1].street;
+        console.log($streetname);
+    </script>
+</body>
+</html>
