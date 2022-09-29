@@ -8,8 +8,29 @@
 </head>
 <body>
     <script>
-        let $8balln = Math.floor(Math.random()*5);
-        console.log($8balln); 
+        let $8balln = Math.floor(Math.random()*6);
+        $q = prompt("Ask me about something.");
+        switch($8balln) {
+            case 0:
+                $ans = " Perhaps"
+                break;
+            case 1:
+                $ans = " Doubtful"
+                break;
+            case 2:
+                $ans = " Time will show"
+                break;
+            case 3:
+                $ans = " It's unclear"
+                break;
+            case 4:
+                $ans = " Most likely"
+                break;
+            default:
+                $ans = " Likely not"
+                break;
+        }
+        console.log($q, $ans); 
     </script>
 </body>
 </html>

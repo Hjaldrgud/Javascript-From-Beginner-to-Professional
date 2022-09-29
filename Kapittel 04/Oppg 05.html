@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $prize = Number(prompt("Select a prize between 1 and 10"));
+        let $op = "My selection: ";
+        switch ($prize) {
+            case 1:
+                $op += " 1000 $";
+                break;
+            case 2:
+                $op += "a lead balloon";
+                break; 
+            case 3:
+                $op += "ten thousand lovers"; 
+                break;
+            case 4:
+                $op += "a dog";
+                break;               
+            case 5:
+                $op += "a jet airplane";  
+                break;
+            case 6:
+                $op += "a car";  
+                break; 
+            case 7:
+                $op += "probiotics"; 
+                break;
+            case 8:
+                $op += "slime";  
+                break; 
+            case 9:
+                $op += "nothing"; 
+                break;
+            case 10:
+                $op += "crafty asskicks"; 
+                break;       
+            default:
+                $op += "tree fiddy"; 
+                break;
+        }
+        console.log($op);
+    </script>
+</body>
+</html>
