@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $age = 10;
+        let $cost = 0;
+        let $message;
+        if($age < 3){
+            $message = "Free entry for children under 3";
+        } else if($age >= 3 && $age < 12) {
+            $message = "Access costs 5 dollars";
+            $cost = 5;
+        } else if($age >= 12 && $age < 65){
+            $message = "Entry costs 10 dollars";
+            $cost = 10;
+        } else {
+            $message = "Entry costs 7 dollars";
+            $cost = 7;
+        }
+        console.log($message);
+        console.log("Your cost is", $cost);
+
+
+        //så fort en statement stemmer, stopper koden. derfor kan vi skrive slik:
+        $age = 10;
+        $cost = 0;
+        $message;
+        if($age < 3){
+            $message = "Free entry for children under 3";
+        } else if($age < 12) {
+            $message = "Access costs 5 dollars";
+            $cost = 5;
+        } else if($age < 65){
+            $message = "Entry costs 10 dollars";
+            $cost = 10;
+        } else {
+            $message = "Entry costs 7 dollars";
+            $cost = 7;
+        }
+        console.log($message);
+        console.log("Your cost is", $cost);
+
+    </script>
+</body>
+</html>

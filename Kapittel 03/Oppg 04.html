@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $myCar = {
+            maker: "Ford",
+            model: "Mustang",
+            hk: 666,
+            topSpeed: 300,
+            speedType: "km/h",
+            isCool: true,
+            color: "blue",
+            forSale: false
+        };
+        console.log($myCar);
+
+        let $farge = "color";
+        console.log($myCar.$farge);
+
+        $farge = "orange";
+        $myCar.color = $farge;
+        console.log($myCar.color);
+
+        console.log($myCar.maker, $myCar.model);
+        console.log($myCar.forSale);
+
+    </script>
+</body>
+</html>

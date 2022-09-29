@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $a = Number(prompt("Write a number between 1 and 10"));
+        let $b = Math.floor(Math.random()*10+1);
+        let $m;
+        if($a < $b) {
+            $m = "Your number is greater";
+        } else if($a == $b) {
+            $m = "numbers are even!";
+        } else {
+            $m = "Your number is smaller";
+        }
+        console.log($m, "(",$a, " vs ", $b, ")");
+    </script>
+</body>
+</html>

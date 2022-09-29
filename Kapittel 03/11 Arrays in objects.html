@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $company = {
+            companyName: "Healthy Candy",
+            activities: ["food manufacturing", "improving kids' health", "manufacturing toys"],
+            address: {
+                street: "2nd Street",
+                number: 123,
+                zip: 33116,
+                city: "Miami",
+                state: "Florida"
+            },
+            yearOfEstablishment: 2021
+        }
+
+        //Hente ut en enkelt arrayelement fra en array inni et objekt:
+        let $aktivitet = $company.activities[1];
+        console.log($aktivitet);
+    </script>
+</body>
+</html>
