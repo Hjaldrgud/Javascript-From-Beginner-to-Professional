@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $gArr = [];
+        let $nCell = 64;
+        let $mCount = 0;
+        var $rArr = [];
+
+        for (let $i = 0; $i <= $nCell; $i++) {
+            $mCount++;
+            $rArr.push($i);
+        }
+        if($mCount % 8 == 0){
+            if(!$rArr == undefined){
+                $gArr.push($rArr);
+            }
+            if($mCount % 8 == 0){
+                $rArr = [];
+            }
+        }
+
+    </script>
+</body>
+</html>
