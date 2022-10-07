@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $car = {
+            $model: "Golf",
+            $make: "Volkswagen",
+            $year: 1999,
+            $color: "black"
+        }
+
+        //Object.keys() lager array ut av properties til objektet. NB Viktig med stor bokstav på Object!
+        let $arrKeys = Object.keys($car);
+        console.log($arrKeys);
+
+        //Loope over properties med for of:
+        for($keys of $arrKeys){ //Eventuelt bare: for($keys of Object.keys($car)){
+            console.log($keys);
+        }
+
+
+        //Object.values() lager array ut av verdier til objektet. NB Viktig med stor bokstav på Object!
+        let $arrValues = Object.values($car);
+        console.log($arrValues);
+
+        for($values of $arrValues){ //Eventuelt bare for($values of Object.values($car)){
+            console.log($values);
+        }
+
+        //Vanlig for loop md litt schwung:
+        for(let $i = 0; $i < $arrKeys.length; $i++){
+            console.log($arrKeys[$i] + ": " + $car[$arrKeys[$i]]);
+        }
+
+
+        //Object entries:
+        let $arrEntries = Object.entries($car);
+        console.log($arrEntries);
+
+        for(const [$key, $value] of Object.entries($car)){
+            console.log($key+": "+$value);
+        }
+    </script>
+</body>
+</html>
