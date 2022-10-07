@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $fly = {
+            $model: "BF 109 G6",
+            $make: "Messerschmitt",
+            $armament: "1x30mm cannon, 2x13mm MG's",
+        }
+
+        console.log("For in med objekt")
+        for($prop in $fly){
+            console.log($prop+": "+$fly[$prop]);
+        }
+
+        let $flyArr = Object.values($fly);
+
+        console.log("Array for of:");
+        for($values of $flyArr){
+            console.log($values);
+        }
+
+        console.log("Array for in");
+        for($key in $flyArr){
+            console.log($key);
+        }
+
+        console.log("Array for in med '$key' OG '$arr['$key'];")
+        for($key in $flyArr){
+            console.log($key+": "+$flyArr[$key]);
+        }
+    </script>
+</body>
+</html>
