@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                let $cars = [
+            {
+                model: "Golf",
+                make: "Volkswagen",
+                year: 1999,
+                color: "black",
+            },
+            {
+                model: "Picanto",
+                make: "KIA",
+                year: 2020,
+                color: "red",
+            },
+            {
+                model: "Peugeot",
+                make: "208",
+                year: 2021,
+                color: "black",
+            },
+            {
+                model: "Fiat",
+                make: "Punto",
+                year: 2020,
+                color: "black",
+            }
+        ];
+
+        for (let $car of $cars){
+            if($car.color !== "black"){
+                continue;
+            }
+            if ($car.year >= 2020){
+                console.log("We could get this one:", $car);
+            }
+        }
+    </script>
+</body>
+</html>

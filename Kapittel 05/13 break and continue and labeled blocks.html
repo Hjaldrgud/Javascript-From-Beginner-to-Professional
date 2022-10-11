@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $groups = [
+            ["Martin", "Daniel", "Keith"],
+            ["Margot", "Marina", "Arne"],
+            ["Helen", "Joey", "Konstansa"]
+        ];
+
+        outer:
+        for (let $group of $groups){
+            inner:
+            for(let $member of $group) {
+                if($member.startsWith("M")){
+                    console.log("Found one starting with M:", $member);
+                    break outer;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
