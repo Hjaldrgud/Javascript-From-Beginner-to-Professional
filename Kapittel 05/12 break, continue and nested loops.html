@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let $groups = [
+            ["Martin", "Daniel", "Keith"],
+            ["Margot", "Marina", "Arne"],
+            ["Helen", "Joey", "Konstansa"]
+        ];
+
+        for (let $i = 0; $i < $groups.length; $i++){
+            let $matches = 0;
+
+            for (let $j = 0; $j < $groups[$i].length; $j++){
+                if($groups[$i][$j].startsWith("M")){
+                    $matches++;
+                } else {
+                    continue;
+                }
+            }
+
+            if($matches === 2){
+                console.log("Found a group with two names starting with an M:");
+                console.log($groups[$i]);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
