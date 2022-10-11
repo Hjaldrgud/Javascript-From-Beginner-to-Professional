@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Vanlig
+        function fDoingStuff($x){
+            console.log($x);
+        }
+
+        //med arrows
+        let fDoingArrowStuff = $x => console.log($x);
+        fDoingArrowStuff("Great!");
+
+        //Flere enn to
+        let fAddTwoNumbers = ($x, $y) => console.log($x + $y);
+        fAddTwoNumbers(5,3);
+
+        //Uten argumenter:
+        let sayHi = () => console.log("hi");
+        sayHi();
+
+        //Med innebygde funksjoner feks foreach
+        const $arr = ["squirrel", "alpaca", "buddy"];
+                //param => body of the function
+        $arr.forEach($e => console.log($e));
+    </script>
+</body>
+</html>
