@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let går ikke. Man får reference error.
+        function doingStuff(){
+            if(true){
+                console.log($x);
+                let $x = "local";
+            }
+        }
+        doingStuff();
+
+        //var går ok. Det kommer ingen error, men heller undefined.
+        function doingStuff(){
+            if(true){
+                console.log($x);
+                var $x = "local";
+            }
+        }
+        doingStuff();
+    </script>
+</body>
+</html>
