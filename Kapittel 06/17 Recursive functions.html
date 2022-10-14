@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getRecursive($nr){
+            console.log($nr);
+            if($nr > 0){
+                getRecursive(--$nr)
+            }
+        }
+        getRecursive(5);
+
+        function logRecursive($nr){
+            console.log("Started function:",$nr);
+            if($nr>0){
+                logRecursive($nr - 1);
+            } else {
+                console.log("Done with recursion");
+            }
+            console.log("Ended function:",$nr);
+        }
+        logRecursive(3);
+    </script>
+</body>
+</html>
