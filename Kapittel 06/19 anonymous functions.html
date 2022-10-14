@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ikke-anonym
+        function doingStuffAnonymously(){
+            console.log("Not so secret though.");
+        }
+
+        //Anonym
+        //function () {
+        //    console.log("A bit more secret, but not working.");
+        //};
+
+        //lagre i variabel
+        let functionVariable = function (){
+            console.log("a bit more secret");
+        };
+        //Kalle den:
+        functionVariable;
+    </script>
+</body>
+</html>
