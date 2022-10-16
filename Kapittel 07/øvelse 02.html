@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class BarTab{
+            #vodkaPrice = 109;
+            #whiskeyPrice = 129;
+            #beerPrice = 49;
+            #vodkaNum;
+            #whiskeyNum;
+            #beerNum;
+            #tabTotal;
+
+            constructor(vodkaNum=0, whiskeyNum=0, beerNum=0){
+                this.#vodkaNum = vodkaNum;
+                this.#whiskeyNum = whiskeyNum;
+                this.#beerNum = beerNum;
+                this.calculateTab();
+            }
+
+            calculateTab(){
+                let tab = 0;
+                tab += this.#vodkaPrice   * this.#vodkaNum;
+                tab += this.#whiskeyPrice * this.#whiskeyNum;
+                tab += this.#beerPrice    * this.#beerNum;
+                this.#tabTotal = tab;
+            }
+
+            getTab(){
+                return "The total cost for your night out is "+this.#tabTotal;
+            }
+
+            getTabTotal(){
+                return this.#tabTotal;
+            }
+        }
+
+        let tab1 = new BarTab(4, 2, 6);
+        let tab2 = new BarTab(8, 4, 0);
+        console.log(tab1);
+        console.log(tab1.getTab());
+        console.log(tab2.getTab());
+        console.log("Total for both of ya: "+Number(tab1.getTabTotal() + tab2.getTabTotal())+" dollar. Ouch");
+    </script>
+</body>
+</html>

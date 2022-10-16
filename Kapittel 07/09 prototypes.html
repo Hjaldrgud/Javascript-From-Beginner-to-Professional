@@ -10,10 +10,26 @@
     <script>
         class Person {
             constructor(firstname, lastname){
-                thyis.firstname = firstname;
+                this.firstname = firstname;
                 this.lastname = lastname;
             }
+
+            greet(){
+                console.log("Hi there!");
+            }
         }
+
+        //Prototypefunksjon
+        Person.prototype.introduce = function () {
+            console.log("Hi, I'm", this.firstname);
+        }
+
+        //Prototype-egenskap
+        Person.prototype.favoriteColor="green";
+
+        let p = new Person("Maria","Mena");
+        console.log(p.favoriteColor);
+        p.introduce();
     </script>
 </body>
 </html>

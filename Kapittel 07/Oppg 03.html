@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            name
+            #sound
+            #size
+            #color
+            constructor(name, sound, size, color){
+                this.name = name;
+                this.#sound = sound;
+                this.#size = size;
+                this.#color = color;
+            }
+
+            getAnimalAndSound(){
+                console.log(this.name+"goes like... "+this.#sound+"!!!");
+            }
+        }
+
+        let hen = new Animal("Gallus gallus", "bakk bakk bakk", "medium-small", "white");
+        let elephant = new Animal("elephantus", "Tuuuuuuuuuut", "big", "grey");
+
+        Animal.prototype.eat = function () {
+            console.log("The "+this.name+" eats now because you fed it some food."); //Prototype avhengig av ikke private altså ikke #
+        }
+
+        hen.getAnimalAndSound();
+        elephant.getAnimalAndSound();
+
+        hen.eat();
+        elephant.eat();
+
+        console.log(elephant);
+    </script>
+</body>
+</html>
