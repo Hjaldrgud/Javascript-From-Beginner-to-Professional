@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            firstName
+            lastName
+            yearsWorked
+            constructor(firstName, lastName, yearsWorked){
+                this.firstName=firstName;
+                this.lastName=lastName;
+                this.yearsWorked=yearsWorked;
+            }
+        }
+
+        let todd = new Employee("Todd", "Howard", 17);
+        let gabe = new Employee("Gabe", "Newell", 24);
+        let bill = new Employee("Bill", "Gates", 40);
+
+        let workers = [todd, gabe, bill];
+        console.log(workers);
+
+        Employee.prototype.getInfo = function () {
+            console.log(this.firstName,this.lastName+" has worked in the company for "+this.yearsWorked+" years");
+        }
+
+        for(i=0; i<workers.length; i++){
+            workers[i].getInfo();
+        }
+
+        //alternative til for-loopen: for of. 
+        for(worker of workers){
+            worker.getInfo();
+        }
+    </script>
+</body>
+</html>
