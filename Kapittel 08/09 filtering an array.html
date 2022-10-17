@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["squirrel", 5, "Tjed", new Date(), true];
+
+        function checkString(element, index){
+            return typeof element === "string";
+        }
+
+        let filterArr = arr.filter(checkString);
+        console.log(filterArr);
+
+        //Viktig å huske at originalarrayen ikke har blitt endret. 
+        //Filter()-metoden returnerer kun en ny array med elementene som kom gjennom filteret
+    </script>
+</body>
+</html>
