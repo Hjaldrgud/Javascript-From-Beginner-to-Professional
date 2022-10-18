@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hi = "Hi buddy!";
+        let newLine = hi.replace("buddy", "mister");
+        console.log(newLine);
+
+        //Når den ikke finnes, skjer ingenting
+        let new_hi2 = hi.replace("mister", "senior");
+        console.log(new_hi2);
+
+        //Den replacer kun den første den finner
+        let s3 = "hello hello";
+        let new_s3 = s3.replace("hello", "salut");
+        console.log(new_s3);
+
+        //for å replace alle bruker vi replaceAll()
+        new_s3 = s3.replaceAll("hello", "yo");
+        console.log(new_s3);
+
+
+    </script>
+</body>
+</html>
