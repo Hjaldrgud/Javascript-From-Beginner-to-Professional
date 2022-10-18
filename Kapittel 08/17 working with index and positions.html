@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let poem = "Roses are red, violets are blue, if I can do JS, then you can do too";
+        let index_re = poem.indexOf("re");
+        console.log(index_re);
+
+        //lastIndexOf er jo samme, bare siste istedenfor første
+        let last = poem.lastIndexOf("re")
+
+        //Logger -1, noe som betyr at den ikke er funnet
+        let indexNotFound = poem.indexOf("python");
+        console.log(indexNotFound);
+
+        //charAt er motsatt av begge to igjen. 
+        let pos1 = poem.charAt(10);
+        console.log(pos1);
+
+        //Hvis indeksen er utafor stringlengda, får man en tom streng tilbake.
+        let pos2  = poem.charAt(1000);
+        console.log(pos2);
+
+        //Ofte så skriver vi en if-sjekk for å se om den er -1 før vi handterer resultatet
+        if(poem.indexOf("python") != -1){
+            //Do stuff
+        }
+
+        //En alternativ måte å søke etter en substring er å bruke search()
+        let searchStr = "When I see my fellow, I say hello";
+        let pos = searchStr.search("lo");
+        console.log(pos);
+
+        let notFound = searchStr.search("JavaScript");
+        console.log(notFound);
+
+    </script>
+</body>
+</html>

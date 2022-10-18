@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let low_bye = "bye!";
+        let up_by = low_bye.toUpperCase();
+        console.log(up_by);
+
+        let caps = "HI MOM HOW ARE YOU?!";
+        let chill = caps.toLowerCase();
+        console.log(chill);
+
+        //La oss gjøre den første bokstaven stor. 
+        let fixedCaps = chill.charAt(0).toUpperCase().concat(chill.slice(1,-1)); //Slice med -1 fungerer til å telle bakfra. Jeg har nå fjerna !
+        console.log(fixedCaps);
+    </script>
+</body>
+</html>
