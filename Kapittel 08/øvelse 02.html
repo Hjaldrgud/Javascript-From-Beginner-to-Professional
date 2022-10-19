@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date(1000);
+        let endDate = new Date (2023, 0, 1, 9, 15, 100);
+        console.log(currentDate);
+        console.log(endDate);
+
+        let nowUnix = Date.parse(currentDate);
+        let futureUnix = Date.parse(endDate);
+        console.log(nowUnix);
+        console.log(futureUnix);
+        
+
+        function timeLeft(){
+            let diff = futureUnix - nowUnix;
+
+            console.log(diff);
+            let dager = Math.floor(diff / (24 * 60 * 60 * 1000));
+            diff = diff % (24 * 60 * 60 * 1000);
+
+            let timer = Math.floor(diff / (60 * 60 * 1000));
+            diff = diff % (60 * 60 * 1000);
+
+            let minutter = Math.floor(diff / (60 * 1000));
+            diff = diff % (60 * 1000);
+
+            let sekunder = Math.floor(diff / (1000));
+            diff = diff % (1000);
+
+            console.log("Dager:", dager);
+            console.log("Timer:", timer);
+            console.log("minutter:", minutter);
+            console.log("sekunder:", sekunder);
+            console.log("mikrosekunder:", diff);
+
+            
+        }
+
+        
+
+        
+        
+        
+    </script>
+</body>
+</html>

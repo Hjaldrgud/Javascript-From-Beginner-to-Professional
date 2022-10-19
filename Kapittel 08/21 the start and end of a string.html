@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let encouragement = "You are doing great, keep up the good work!";
+        let bool_start = encouragement.startsWith("You");
+        console.log(bool_start);
+
+        //Dette er case sensitive 
+        let bool_start_case = encouragement.startsWith("you");
+        console.log(bool_start_case);
+
+        let bool_start_flatten = encouragement.toLowerCase().startsWith("you");
+        console.log(bool_start_flatten);
+
+        //Samme bare med end
+        let bool_end = encouragement.endsWith("Something else");
+        console.log(bool_end);
+    </script>
+</body>
+</html>

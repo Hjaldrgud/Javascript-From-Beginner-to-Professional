@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 6.78;
+        let y = 5.34;
+
+        //Round. Runder opp på 0.5
+        console.log("round X", x, "becomes", Math.round(x));
+        console.log("round Y", y, "becomes", Math.round(y));
+
+        //ceil. Runder alltid opp
+        console.log("ceil X", x, "becomes", Math.ceil(x));
+        console.log("ceil Y", y, "becomes", Math.ceil(y));
+
+        //floor. runder alltid ned
+        console.log("floor X", x, "becomes", Math.floor(x));
+        console.log("floor Y", y, "becomes", Math.floor(y));
+
+        //trunc. litt det samme som floor, bare at den rett og slett fjerner desimalene uansett:
+        console.log("trunc X", x, "becomes", Math.trunc(x));
+        console.log("trunc Y", y, "becomes", Math.trunc(y));
+
+        //Med negative numre, så blir ceil og floor omvendt av hverandre:
+        console.log("Negative numre lager krøll og gjør ceil og floor omvendt");
+        x = -x;
+        y = -y;
+            //ceil. 
+            console.log("ceil X", x, "becomes", Math.ceil(x));
+            console.log("ceil Y", y, "becomes", Math.ceil(y));
+
+            //floor.
+            console.log("floor X", x, "becomes", Math.floor(x));
+            console.log("floor Y", y, "becomes", Math.floor(y));
+
+            //trunc. 
+            console.log("trunc X", x, "becomes", Math.trunc(x));
+            console.log("trunc Y", y, "becomes", Math.trunc(y));
+
+        //Whenever you need to round down, you'll have to use floor(), 
+        //if you need the integer part of the number, you'll need trunc()
+    </script>
+</body>
+</html>
