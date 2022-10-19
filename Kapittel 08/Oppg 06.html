@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Math.PI);
+        let num2 = 5.5;
+        console.log(Math.ceil(num2), Math.round(num2), Math.floor(num2));
+        //RNG
+        console.log(Math.random());
+        //0-10
+        console.log(Math.floor(Math.random()*11));
+        //1-10
+        console.log(Math.floor(Math.random()*10+1));
+
+        //1-100
+        console.log(Math.floor(Math.random()*100+1));
+        
+        function rng(min, max){
+            return Math.floor(Math.random()*max+min);
+        }
+
+        for(i = 1; i <= 100; i++){
+            console.log(rng(1, 100));
+        }
+    </script>
+</body>
+</html>

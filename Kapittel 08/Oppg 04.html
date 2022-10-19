@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "thiS will be capiTalized for each word";
+        let arr = str.split(" ");
+        let newStr = "";
+        for (word of arr) {
+            let lower = word.toLowerCase();
+            let firstCapital = lower.charAt(0).toUpperCase().concat(lower.slice(1));
+            newStr = newStr.concat(firstCapital)+" ";
+        }
+        console.log(newStr);
+    </script>
+</body>
+</html>
